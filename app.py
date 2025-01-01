@@ -3,7 +3,7 @@ import streamlit as st
 
 # Set up OpenAI API key
 import os
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI"]["API_KEY"]
 
 # Webpage title
 st.title("Email Drafting Assistant")
